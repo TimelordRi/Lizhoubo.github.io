@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="波波最喜欢小黑了！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="波波的博客">
-<meta property="og:url" content="https://timelordri.github.io/boboblog.github.io/index.html">
+<meta name="description" content="Decorator&amp;amp;Pyinstaller 装饰器的使用及Pyinstaller相关问题一、装饰器的使用：123456#定义要被签名的函数：def sumi(args):    s = &apos;&apos; if type(list(args)[0]) == str else 0    for i in list(args):        s += i    return s  123456789101">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Decorator&amp;Pyinstaller">
+<meta property="og:url" content="https://timelordri.github.io/boboblog.github.io/2019/09/25/Decorator&Pyinstaller/index.html">
 <meta property="og:site_name" content="波波的博客">
-<meta property="og:description" content="波波最喜欢小黑了！">
+<meta property="og:description" content="Decorator&amp;amp;Pyinstaller 装饰器的使用及Pyinstaller相关问题一、装饰器的使用：123456#定义要被签名的函数：def sumi(args):    s = &apos;&apos; if type(list(args)[0]) == str else 0    for i in list(args):        s += i    return s  123456789101">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-25T13:10:26.371Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="波波的博客">
-<meta name="twitter:description" content="波波最喜欢小黑了！">
+<meta name="twitter:title" content="Decorator&amp;Pyinstaller">
+<meta name="twitter:description" content="Decorator&amp;amp;Pyinstaller 装饰器的使用及Pyinstaller相关问题一、装饰器的使用：123456#定义要被签名的函数：def sumi(args):    s = &apos;&apos; if type(list(args)[0]) == str else 0    for i in list(args):        s += i    return s  123456789101">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://timelordri.github.io/boboblog.github.io/">
+  <link rel="canonical" href="https://timelordri.github.io/boboblog.github.io/2019/09/25/Decorator&Pyinstaller/">
 
 
 
 
 
-  <title>波波的博客</title>
+  <title>Decorator&Pyinstaller | 波波的博客</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/boboblog.github.io/2019/09/25/Decorator&Pyinstaller/" itemprop="url">Decorator&Pyinstaller</a></h1>
+          <h1 class="post-title" itemprop="name headline">Decorator&Pyinstaller</h1>
         
 
         <div class="post-meta">
@@ -301,9 +299,7 @@
       
 
       
-        
-          
-            <p>Decorator&amp;Pyinstaller</p>
+        <p>Decorator&amp;Pyinstaller</p>
 <h1 id="装饰器的使用及Pyinstaller相关问题"><a href="#装饰器的使用及Pyinstaller相关问题" class="headerlink" title="装饰器的使用及Pyinstaller相关问题"></a>装饰器的使用及Pyinstaller相关问题</h1><h2 id="一、装饰器的使用："><a href="#一、装饰器的使用：" class="headerlink" title="一、装饰器的使用："></a>一、装饰器的使用：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#定义要被签名的函数：</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sumi</span><span class="params">(args)</span>:</span></span><br><span class="line">    s = <span class="string">''</span> <span class="keyword">if</span> type(list(args)[<span class="number">0</span>]) == str <span class="keyword">else</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> list(args):</span><br><span class="line">        s += i</span><br><span class="line">    <span class="keyword">return</span> s</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#管理员和用户的数据库</span></span><br><span class="line">admin_info = &#123;<span class="string">'lizhoubo'</span>: <span class="string">'ilovexh'</span>&#125;</span><br><span class="line">users_info = &#123;<span class="string">'lizhoubo'</span>: <span class="string">'ilovexh'</span>&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#管理员操作系统：管理装饰器使用</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">apply_user</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.id = input(<span class="string">'欢迎您登陆管理员系统！\n请输入管理员账号：\n'</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.id <span class="keyword">in</span> admin_info:</span><br><span class="line">            <span class="keyword">raise</span> Warning(<span class="string">'您不是系统管理员，请申请管理权限！'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.password = input(<span class="string">'请输入您的密码：\n'</span>)</span><br><span class="line">            <span class="keyword">if</span> admin_info[self.id] != self.password:</span><br><span class="line">                <span class="keyword">raise</span> Warning(<span class="string">'密码错误，认证失败！'</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                case = eval(</span><br><span class="line">                    input(<span class="string">'恭喜您，登陆成功！\n你可以使用以下函数进行操作：\n '</span> +</span><br><span class="line">                          <span class="string">'1、添加新用户；\n 2、删除用户；\n 3、修改密码；\n 4、查询注册表；\n 5、退出。\n'</span>))</span><br><span class="line">        cases = [self.add_user, self.del_user, self.alter_pass, self.info_get]</span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            <span class="keyword">if</span> case <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">5</span>):</span><br><span class="line">                print(cases[case - <span class="number">1</span>]())</span><br><span class="line">            <span class="keyword">elif</span> case == <span class="number">5</span>:</span><br><span class="line">                print(<span class="string">'成功退出操作系统！但您可自行调用有关函数。'</span>)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">raise</span> Warning(<span class="string">'无效操作！'</span>)</span><br><span class="line">            case = eval(</span><br><span class="line">                input(<span class="string">'你可以使用以下函数进行操作：\n '</span> +</span><br><span class="line">                      <span class="string">'1、添加新用户；\n 2、删除用户；\n 3、修改密码；\n 4、查询注册表；\n 5、退出。\n'</span>))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">add_user</span><span class="params">(self)</span>:</span></span><br><span class="line">        id_ = input(<span class="string">'请输入要注册的账号：\n'</span>)</span><br><span class="line">        password = input(<span class="string">'请输入密码：\n'</span>)</span><br><span class="line">        <span class="keyword">if</span> id_ <span class="keyword">in</span> users_info:</span><br><span class="line">            <span class="keyword">raise</span> Warning(<span class="string">'该账户已被注册！请直接登陆！'</span>)</span><br><span class="line">        users_info[id_] = password</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'注册成功！可以登陆用户。'</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">del_user</span><span class="params">(self)</span>:</span></span><br><span class="line">        id_ = input(<span class="string">'请输入要注销的账号：\n'</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> id_ <span class="keyword">in</span> users_info:</span><br><span class="line">            <span class="keyword">raise</span> Warning(<span class="string">'该账户不存在，或请勿重复操作！'</span>)</span><br><span class="line">        users_info.pop(id_)</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'删除成功！'</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">alter_pass</span><span class="params">(self)</span>:</span></span><br><span class="line">        password = input(<span class="string">'修改您的密码为：\n'</span>)</span><br><span class="line">        admin_info[self.id] = password</span><br><span class="line">        users_info[self.id] = password</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'密码修改成功！'</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">info_get</span><span class="params">(self)</span>:</span></span><br><span class="line">        info = users_info</span><br><span class="line">        <span class="keyword">return</span> info</span><br></pre></td></tr></table></figure>
@@ -407,8 +403,6 @@ ilovelzb
 </ul>
 <p>Windows系统命令行输入<code>pip install pipenv</code>安装Pipenv包。<br><br><br><br>在xxx.py所在目录运行DOS命令行输入<code>pipenv shell</code>进入.virtualenv。<br><br><br><br>这里查看自己是否操作正确可以用命令<code>pip list</code>查看当前虚拟环境下安装的包，也可以用<code>pipenv --venv</code> 查看虚拟环境路径。更多操作见<code>pipenv help</code><br><br><br><br>然后就可以使用Pyinstaller了，<mark>操作跟前面一样</mark>。<br><br><br><br>打包完成可以用<code>exit</code>命令退出虚拟环境。<br><br><br><br>Pipenv使用详见<a href="https://docs.pipenv.org/en/latest/" target="_blank" rel="noopener">官方文档</a></p>
 
-          
-        
       
     </div>
     
@@ -425,211 +419,28 @@ ilovelzb
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://timelordri.github.io/boboblog.github.io/boboblog.github.io/2019/09/25/Iterator&Generator/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="波波">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/boboblog.github.io/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="波波的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/boboblog.github.io/2019/09/25/Iterator&Generator/" itemprop="url">Iterator&Generator</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-25T20:55:30+08:00">
-                2019-09-25
-              </time>
+              <a href="/boboblog.github.io/2019/09/25/Iterator&Generator/" rel="next" title="Iterator&Generator">
+                <i class="fa fa-chevron-left"></i> Iterator&Generator
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="迭代器和生成器-详见"><a href="#迭代器和生成器-详见" class="headerlink" title="迭代器和生成器 详见"></a>迭代器和生成器 <a href="https://www.cnblogs.com/zhouyuan666/p/9538877.html" target="_blank" rel="noopener">详见</a></h2><h3 id="1、迭代器"><a href="#1、迭代器" class="headerlink" title="1、迭代器"></a>1、迭代器</h3><p>   <strong>一、什么是迭代器协议</strong></p>
-<pre><code>1.迭代器协议是指：对象必须提供一个next方法，执行该方法要么返回迭代器中的下一项，要么就引起一个stoplteration异常，以终止协议（只能往后走不能往前）
-
-2.可迭代对象：实现了迭代器协议的对象（如何实现：对象内部定义一个__iter__()方法）
-
-3.协议是一种约定，可迭代对象实现了迭代器协议，python的内部工具（如for循环，sum，min函数等）使用迭代器协议访问对象。</code></pre><p>   <strong>二、for循环机制</strong></p>
-<pre><code>1.for循环机制的本质：循环所有对象，全部都是使用迭代器协议。</code></pre><p><mark><strong>注：</strong>这里讲到Python类中的一些特殊函数</mark></p>
-<ul>
-<li><a href="https://blog.csdn.net/sssssspuer/article/details/95717514" target="_blank" rel="noopener">https://blog.csdn.net/sssssspuer/article/details/95717514</a></li>
-<li><a href="https://www.cnblogs.com/xiangsikai/p/7827021.html" target="_blank" rel="noopener">https://www.cnblogs.com/xiangsikai/p/7827021.html</a></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Imter</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="string">'''小黑你好啊！！'''</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,step)</span>:</span></span><br><span class="line">        self.step=step</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__iter__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__next__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> self.step==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">raise</span> StopIteration(<span class="string">'Beyond index!'</span>)</span><br><span class="line">        self.step-=<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> self.step</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[i <span class="keyword">for</span> i <span class="keyword">in</span> Imter(<span class="number">10</span>)]</span><br></pre></td></tr></table></figure>
-
-<pre><code>[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Fib</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.a, self.b = <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__iter__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__next__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.a, self.b = self.b, self.a + self.b</span><br><span class="line">        <span class="keyword">if</span> self.a &gt; <span class="number">1000</span>:</span><br><span class="line">            <span class="keyword">raise</span> StopIteration()</span><br><span class="line">        <span class="keyword">return</span> self.a</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[i <span class="keyword">for</span> i <span class="keyword">in</span> Fib()]</span><br></pre></td></tr></table></figure>
-
-<pre><code>[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987]</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> groupby</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">compress</span><span class="params">(data)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> ((len(list(group)),name) <span class="keyword">for</span> name ,group <span class="keyword">in</span> groupby(data))</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decompress</span><span class="params">(data)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (car * size <span class="keyword">for</span> size, car <span class="keyword">in</span> data)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list(compress(<span class="string">'小黑姐姐你好漂亮啊'</span>))</span><br></pre></td></tr></table></figure>
-
-<pre><code>[(1, &apos;小&apos;),
- (1, &apos;黑&apos;),
- (2, &apos;姐&apos;),
- (1, &apos;你&apos;),
- (1, &apos;好&apos;),
- (1, &apos;漂&apos;),
- (1, &apos;亮&apos;),
- (1, &apos;啊&apos;)]</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">''</span>.join(decompress(compress(<span class="string">'小黑姐姐你好漂亮啊'</span>)))</span><br></pre></td></tr></table></figure>
-
-<pre><code>&apos;小黑姐姐你好漂亮啊&apos;</code></pre><p><strong>三：什么是生成器</strong></p>
-<p>1.生成器，可以理解为一种数据类型，这种数据类型$\color{red}{自动实现了迭代器协议}$（其他的数据类型需要调用自己内置的_iter_方法），所以生成器就是可迭代对象。</p>
-<p>2.生成器分类：在python中有两种表现形式（python有两种不同的方式提供生成器）</p>
-<p><mark><strong>注：</strong> 生成器函数：常规函数定义，但是，$\color{red}{使用yield语句}$而不是return语句返回结果，yield语句一次返回一个结果，在每个结果中间，挂起函数的状态，以便于下次从它离开的地方继续执行。</mark></p>
-<ul>
-<li><p>可以通过函数中yield语句来暂停循环语句while或for的运行，这样的函数可以作为generator来使用。</p>
-<ul>
-<li><p>其中调用的__next__()函数用来恢复yield语句后面的程序运行。</p>
-</li>
-<li><p>send()函数负责将值传递给中断运行的yield，在后面的语句发挥作用。</p>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">s=[<span class="string">'你能好好对小黑嘛？！她这么乖！'</span>,<span class="string">'你怎么能抱怨小黑呢？！'</span>,<span class="string">'求你了，好好珍惜她吧！'</span>,<span class="string">'你不知道她可想你了嘛！'</span>,<span class="string">'你小心我告诉小黑！'</span>]</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">People</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.name=input(<span class="string">'你叫啥名字啊？\n我叫'</span>)</span><br><span class="line">        self.sex=input(<span class="string">'你男的女的啊？\n我是'</span>)</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"&#123;&#125;，原来你是&#123;&#125;啊！哈哈哈。"</span>.format(self.name,self.sex))</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">questions</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> (<span class="string">'来吧，你有啥问题啊？ '</span>)</span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            i=random.randint(<span class="number">0</span>,len(s)<span class="number">-1</span>)</span><br><span class="line">            answer=(<span class="keyword">yield</span>)</span><br><span class="line">            <span class="keyword">if</span> answer <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">if</span> answer.endswith(<span class="string">'？'</span>):</span><br><span class="line">                    <span class="keyword">print</span> (<span class="string">'好了好了，哪有这么多鬼问题！'</span>)</span><br><span class="line">                <span class="keyword">elif</span> <span class="string">'小黑'</span> <span class="keyword">in</span> answer:</span><br><span class="line">                    <span class="keyword">print</span> (<span class="string">'&#123;&#125;'</span>.format(s[i]))</span><br><span class="line">                <span class="keyword">elif</span> <span class="string">'哭'</span> <span class="keyword">in</span> answer:</span><br><span class="line">                    <span class="keyword">print</span> (<span class="string">'好了好了，哭个屁'</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b=People()</span><br></pre></td></tr></table></figure>
-
-<pre><code>你叫啥名字啊？
-我叫黎洲波
-你男的女的啊？
-我是男的
-黎洲波，原来你是男的啊！哈哈哈。</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Q=b.questions()</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Q.__next__()</span><br></pre></td></tr></table></figure>
-
-<pre><code>来吧，你有啥问题啊？ </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Q.send(<span class="string">'小黑姐姐欺负我！'</span>)</span><br></pre></td></tr></table></figure>
-
-<pre><code>你能好好对小黑嘛？！她这么乖！</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Q.send(<span class="string">'呜呜呜，我哭了'</span>)</span><br></pre></td></tr></table></figure>
-
-<pre><code>好了好了，哭个屁</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Q.send(<span class="string">'小黑她总是不理我呜呜呜'</span>)</span><br></pre></td></tr></table></figure>
-
-<pre><code>你小心我告诉小黑！</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Q.send(<span class="string">'我也想小黑了'</span>)</span><br></pre></td></tr></table></figure>
-
-<pre><code>求你了，好好珍惜她吧！</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Q.send(<span class="string">'有时候我还会生小黑的气呢'</span>)</span><br></pre></td></tr></table></figure>
-
-<pre><code>你怎么能抱怨小黑呢？！</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Q.send(<span class="string">'你怎么这个亚子？'</span>)</span><br></pre></td></tr></table></figure>
-
-<pre><code>好了好了，哪有这么多鬼问题！</code></pre><ul>
-<li>也可以使用列表推导式来写迭代器和生成器：</li>
-</ul>
-<p>这里的my_iter就是生成器</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">my_iter=(x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>) <span class="keyword">if</span> x%<span class="number">2</span>==<span class="number">0</span>)</span><br><span class="line">[i <span class="keyword">for</span> i <span class="keyword">in</span> my_iter]</span><br></pre></td></tr></table></figure>
-
-<pre><code>[0, 4, 16, 36, 64]</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type(my_iter)</span><br></pre></td></tr></table></figure>
-
-<pre><code>generator</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -639,10 +450,11 @@ ilovelzb
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -650,6 +462,10 @@ ilovelzb
 
 
           
+
+  
+
+
 
         </div>
         
@@ -670,8 +486,17 @@ ilovelzb
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -713,6 +538,22 @@ ilovelzb
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#装饰器的使用及Pyinstaller相关问题"><span class="nav-number">1.</span> <span class="nav-text">装饰器的使用及Pyinstaller相关问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、装饰器的使用："><span class="nav-number">1.1.</span> <span class="nav-text">一、装饰器的使用：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、用pyinstaller打包-py文件"><span class="nav-number">1.2.</span> <span class="nav-text">二、用pyinstaller打包.py文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0、这里涉及到问题："><span class="nav-number">1.2.1.</span> <span class="nav-text">0、这里涉及到问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1、安装和使用Pyinstaller"><span class="nav-number">1.2.2.</span> <span class="nav-text">1、安装和使用Pyinstaller </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、递归深度达上限"><span class="nav-number">1.2.3.</span> <span class="nav-text">2、递归深度达上限 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、关联文件无法加载"><span class="nav-number">1.2.4.</span> <span class="nav-text">3、关联文件无法加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、Anaconda和Pipenv环境下打包"><span class="nav-number">1.2.5.</span> <span class="nav-text">4、Anaconda和Pipenv环境下打包</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -846,6 +687,10 @@ ilovelzb
   
 
   
+  <script type="text/javascript" src="/boboblog.github.io/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/boboblog.github.io/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
